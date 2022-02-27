@@ -13,7 +13,7 @@ for(let i = 1; i <= 16; i++) {
 
     if(i < 5){
         columnOne.appendChild(imgDiv);
-    } else if (i < 9) {
+    }else if (i < 9) {
         columnTwo.appendChild(imgDiv);
     }else if (i < 13){
         columnThree.appendChild(imgDiv);
