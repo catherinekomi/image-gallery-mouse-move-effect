@@ -1,11 +1,11 @@
 let container = document.querySelector('.container');
-let canvas = document.querySelector('canvas');
+let canvas = document.querySelector('.canvas');
 let columnOne = document.querySelector('.one');
 let columnTwo = document.querySelector('.two');
 let columnThree = document.querySelector('.three');
 let columnFour = document.querySelector('.four');
 
-for(let i=1; i <=16; i++) {
+for(let i = 1; i <= 16; i++) {
     let imgDiv = document.createElement('div');
     let divImage = document.createElement('img');
     divImage.setAttribute('src', `./images/${i}.jpeg`);
@@ -21,3 +21,8 @@ for(let i=1; i <=16; i++) {
         columnFour.appendChild(imgDiv);
     }
 }
+
+container.addEventListener('mousemove', (e) => {
+
+    let x = e.clientX - container.getBoundingClientRect().left;
+})
