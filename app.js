@@ -8,7 +8,7 @@ let columnFour = document.querySelector('.four');
 for(let i = 1; i <= 16; i++) {
     let imgDiv = document.createElement('div');
     let divImage = document.createElement('img');
-    divImage.setAttribute('src', `./images/${i}.jpg`);
+    divImage.setAttribute('src', `./images/${i}.jpeg`);
     imgDiv.appendChild(divImage);
 
     if(i < 5){
@@ -26,5 +26,5 @@ window.addEventListener('mousemove', (e) => {
 
     let x = e.clientX - container.getBoundingClientRect().left;
     let y = e.clientY - container.getBoundingClientRect().top;
-    canvas.getElementsByClassName.transform = `translate(-${x}px, -${y}px)`
+    canvas.style.transform = `translate(-${x}px, -${y*2}px)`
 })
