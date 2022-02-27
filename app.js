@@ -22,7 +22,9 @@ for(let i = 1; i <= 16; i++) {
     }
 }
 
-container.addEventListener('mousemove', (e) => {
+window.addEventListener('mousemove', (e) => {
 
     let x = e.clientX - container.getBoundingClientRect().left;
+    let y = e.clientY - container.getBoundingClientRect().top;
+    canvas.getElementsByClassName.transform = `translate(-${x}px, -${y}px)`
 })
