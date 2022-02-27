@@ -8,7 +8,7 @@ let columnFour = document.querySelector('.four');
 for(let i = 1; i <= 16; i++) {
     let imgDiv = document.createElement('div');
     let divImage = document.createElement('img');
-    divImage.setAttribute('src', `./images/${i}.jpeg`);
+    divImage.setAttribute('src', `./images/${i}.jpg`);
     imgDiv.appendChild(divImage);
 
     if(i < 5){
